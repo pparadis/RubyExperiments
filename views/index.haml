@@ -1,0 +1,11 @@
+%html
+	%head
+		%script{:type => "text/javascript", :src  => "https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"}
+		%title Hello World
+	
+	%body
+		%p Bonjour!
+		%p 
+			= 'http://' + request.host_with_port()
+		%p 
+			= request.host_with_port()
